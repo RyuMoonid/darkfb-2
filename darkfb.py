@@ -99,20 +99,8 @@ def login():
                 os.system('xdg-open https://youtube.com/Valen0602')
                 time.sleep(2)
                 menu()
-            except requests.exceptions.ConnectionError:
-                print '\n\x1b[1;91m[!] Tidak ada koneksi'
-                keluar()
+            
 
-        if 'checkpoint' in url:
-            print '\n\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
-            os.system('rm -rf login.txt')
-            time.sleep(1)
-            keluar()
-        else:
-            print '\n\x1b[1;91m[!] Login Gagal'
-            os.system('rm -rf login.txt')
-            time.sleep(1)
-            login()
 
 
 def menu():
